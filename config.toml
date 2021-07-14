@@ -1,0 +1,9 @@
+baseURL = "https://topher1120.github.io/"
+languageCode = "en-us"
+title = "Slapshots by Chris Marks"
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+
+[module]
+
+	[[module.imports]]
+	  path = "github.com/theNewDynamic/gohugo-theme-ananke"
