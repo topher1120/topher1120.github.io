@@ -19,7 +19,10 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          # extended: true
+          extended: true
+          
+      - name: Get Hugo Modules
+        run: hugo mod get -u
 
       - name: Build
         run: hugo --minify
