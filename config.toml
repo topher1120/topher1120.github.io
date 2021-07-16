@@ -1,6 +1,6 @@
 baseURL = "https://topher1120.github.io"
 languageCode = "en-us"
-title = "Catastrophic Failures"
+title = "Catastrophic Failures by Chris"
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
 [params]
