@@ -1,7 +1,7 @@
 ---
 title: "Awful At Rust: Using AWS with Rusoto"
-date: 2021-07-21T22:01:15-06:00
-draft: true
+date: 2021-07-28T22:01:15-06:00
+draft: false
 ---
 
 ### Hi, I'm Chris and I'm awful at Rust.
@@ -86,7 +86,7 @@ error[E0752]: `main` function is not allowed to be `async`
    | ^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`
 ```
 
-Somewhere in the Rusoto documentation, I read that Rusoto uses Tokio under the hood as an async runtime.  In taking a look at Tokio, I found that by adding the `tokio::main` attribute to the main function, it converts the function to a tokio runtime function and allows the `async` keyword to be used.
+Somewhere in the Rusoto documentation, I read that Rusoto uses [Tokio](https://tokio.rs/) under the hood as an async runtime.  In taking a look at Tokio, I found that by adding the `tokio::main` attribute to the main function, it converts the function to a tokio runtime function and allows the `async` keyword to be used.  An example of this can be found in the [Tokio Hello World example](https://tokio.rs/tokio/tutorial/hello-tokio).
 
 So, back to `Cargo.toml`:
 ```toml
@@ -105,3 +105,4 @@ then, add the attribute to `main`:
 async fn main() {
 ```
 
+You can find the source code for this article at [https://github.com/topher1120/AwfulRustAWS](https://github.com/topher1120/AwfulRustAWS).
