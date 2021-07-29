@@ -1,6 +1,6 @@
 ---
 title: "Awful At Rust: Using AWS with Rusoto"
-date: 2021-07-28T22:01:15-06:00
+date: 2021-07-28T10:00:00-06:00
 draft: false
 ---
 
